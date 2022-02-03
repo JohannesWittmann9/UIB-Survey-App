@@ -1,0 +1,228 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #f0f0f0;
+  
+  color: black;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  
+}
+
+h1 {
+  text-align: center;
+}
+
+.title-description {
+  opacity: 65%;
+  text-align: center;
+}
+
+.task-description {
+  opacity: 100%;
+  padding-left: 7vw;
+  padding-right: 7vw;
+  padding-bottom: 20px;
+}
+
+.task-query {
+  font-size: 18px;
+  padding-bottom: 7px;
+  padding-top: 7px;
+  padding-left: 10px;
+  border: 1px solid black;
+  border-radius: 15px;
+  margin-left: 7vw;
+  margin-right: 7vw;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.task-snippet {
+  padding-bottom: 1vh;
+  padding-top: 1vh;
+  font-size: 16px;
+  padding-left: 7vw;
+  padding-right: 7vw;
+}
+
+.task-snippet-after {
+  position: relative;
+  z-index: 1;
+}
+
+.task-snippet-after::after
+{
+  position: absolute;
+  content: 'Clicked';
+  top: 0%;
+  bottom: 0%;
+  left: 10%;
+  right:10%;
+  text-align: right;
+  padding: 5px;
+  font-weight: bold;
+  background-color: greenyellow;
+  z-index: -1;
+}
+
+.task-snippet-title {
+  color: #1a0dab;
+  font-size: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.task-snippet-url {
+  color: #202124;
+}
+
+.task-snippet-hover:hover {
+  cursor: pointer;
+}
+
+.task-snippet-description {
+  color: #585156;
+  width: 60%;
+}
+
+.task-snippet-img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.description {
+  padding-inline-start: 7vw;
+  padding-inline-end: 7vw;
+  padding-bottom: 5vh;
+}
+
+.task-header {
+ 
+  margin-left: 100px;
+  margin-right: 100px;
+  padding-top: 20px;
+}
+
+.task-definition {
+  background-color: greenyellow;
+  border-radius: 15px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+  padding-top: 10px;
+  
+}
+
+/* "Code" for buttons from https://www.w3schools.com/howto/howto_css_next_prev.asp */
+
+/* Styles for submit button */
+
+.links {
+  position: absolute;
+  bottom: 3vh;
+  right: 5vh;
+  text-decoration: none;
+  display: inline-block;
+  padding: 5px 16px 8px 16px;
+  transition: transform 300ms ease-in-out;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.links:hover {
+  transform: scale(1.1);
+  background-color: #a8a8a8;
+  color: white;
+  cursor: pointer;
+}
+
+.next {
+  float: right;
+  background-color: #bbfffc;
+  color: black;
+}
+
+.previous {
+  float: left;
+  background-color: #bbfffc;
+  color: black;
+}
+
+.round {
+  border-radius: 50%;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Styles for the Id input */
+
+.id-Input {
+  padding: 2vh;
+  background-color: rgb(255, 144, 144);
+  margin-left: 7vw;
+  margin-right: 7vw;
+  border-radius: 5px;
+}
+
+.input-description {
+  padding-bottom: 1vh;
+}
+
+.input {
+  padding: 1vh;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 90%;
+  height: 4.5vh;
+  margin-bottom: 2vh;
+}
+
+.checkBox {
+  margin-right: 2vh;
+}
+
+.terms-Input {
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+}
+
+.end-description {
+  text-align: center;
+  font-size: 25px;
+  
+}
+
+.end-description > ul {
+  list-style: none;
+}
+
+.demographic{
+  font-size: 20px;
+}
+
+.demographic-title{
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+
+.demographic input, .demographic select {
+  width: 90%;
+  font-size: 20px;
+  border-radius: 10px;
+  border: 1px solid black;
+  padding: 10px;
+}

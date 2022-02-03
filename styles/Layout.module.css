@@ -1,0 +1,68 @@
+.container {
+  display: flexbox;
+  margin: 0;
+  font-family: 'Oxygen',sans-serif; 
+  color: black;
+}
+
+.content {
+  position: absolute;
+  top: 15vh;
+  left: 15vw;
+  display: block;
+  background: white;
+  box-shadow: 0 3px 10px rgb(0, 0, 0);
+  margin: auto;
+  width: 70%;
+  min-height: 85vh;
+  padding: 1.5rem;
+  margin-bottom: 5vh;
+  padding-bottom: 50px;
+}
+
+/* From https://stackoverflow.com/questions/9350775/set-position-absolute-and-margin */
+.spacer {
+  position: absolute;
+  bottom: -5vh;
+  left: -5vw;
+  right: -5vw;
+  height: 10vh;
+  width: 120%;
+  margin: 0 0 -50px 0;
+  background-color: #f0f0f0;
+}
+
+.nav {
+  margin: 0;
+  display: flexbox;
+  background-color: #bbfffc;
+  overflow: overlay;
+  display: flex;
+  position: relative;
+  border-bottom: 3px solid rgba(0, 0, 0, 0.082);
+}
+
+.nav > * {
+  flex-basis: 100%;
+}
+
+.title {
+  display: inline-block;
+  font-size: 30px;
+  font-weight: 500; 
+  text-transform: uppercase; 
+  text-align: start;
+  margin-left: 5vw;
+  letter-spacing: 5px;
+}
+
+.title1{
+  color: #007a74;
+}
+
+.col {
+  display: inline-block;
+  margin: auto;
+  text-align: center;
+  font-size: 13px;
+}
