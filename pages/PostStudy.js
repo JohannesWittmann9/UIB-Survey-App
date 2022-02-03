@@ -10,6 +10,7 @@ export default function PostStudy()
 {
     const [cookie, setCookie] = useCookies(['user']);
     const [user, setUser] = useState(cookie.user);
+    const [visible, setVisible] = useState(false);
     const router = useRouter();
 
     const handleSubmit = () => {
@@ -17,18 +18,23 @@ export default function PostStudy()
         let age = document.getElementById('age').value,
             gender = document.getElementById('gender').value,
             degree = document.getElementById('degree').value,
-            occupation = document.getElementById('occupation').value;
+            occupation = document.getElementById('occupation').value,
+            matriculation = document.getElementById('matriculation').value,
+            email = document.getElementById('email').value;
 
         let data = {
             age: age,
             gender: gender,
             degree: degree,
             occupation: occupation, 
+            matriculation: matriculation,
+            email:email
         };
 
         if(data.age === ''){return}
         else if (data.age.length < 2){return}
         else if(data.occupation === ''){return}
+
 
         update(user.userID, {postStudy: data});
 
@@ -66,6 +72,23 @@ export default function PostStudy()
                     <div className="demographic-title">What is your current occupation? (e.g.: If you are currently studying at a university insert &quot;Student&quot;) </div>
                     <input id="occupation" type="text" placeholder='e.g.: Student' />
                 </div>
+
+                <div className="description demographic demographic-vp" onClick={()=>setVisible(!visible)}>
+                    <strong>CLICK HERE</strong> if you are a student from the University of Regensburg
+                </div>
+                {visible && (
+                    <>
+                        <div className="description demographic">
+                            <div className="demographic-title"> Please enter your matriculation number ... </div>
+                            <input id="matriculation" type="text" placeholder='Matrikelnummer' />
+                        </div>
+                        <div className="description demographic">
+                            <div className="demographic-title">Please enter your Student-Email ...</div>
+                            <input id="email" type="text" placeholder='Email' />
+                        </div>
+                        
+                    </>
+                )}
             </div>
             <button onClick={handleSubmit} className="links next round">&gt;</button>
         </Layout>
