@@ -21,6 +21,7 @@ export default function Task()
     const [taskDescription, setTaskDescription] = useState("");
     const [tasks, setTasks] = useState([]);
     const [tasksLoaded, setTasksLoaded] = useState(false);
+    const [visible, setVisible] = useState(false);
 
     const router = useRouter();
 
@@ -140,6 +141,17 @@ export default function Task()
                 {taskDescription}
              </div>
             <div className='task-query'>{taskTitle}</div>
+            <div className=' description task-hint'>
+                <button>What do I have to do here?</button>
+                {visible && (
+                    <>
+                        <div>
+                            Please click on all the search results, and rate your perceived credibility
+                            on the bottom of the page.
+                        </div>
+                    </>
+                )}
+            </div>
             {tasksLoaded && (
             <>
                 

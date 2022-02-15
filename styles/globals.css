@@ -107,7 +107,6 @@ h1 {
 }
 
 .task-header {
- 
   margin-left: 100px;
   margin-right: 100px;
   padding-top: 20px;
@@ -121,7 +120,10 @@ h1 {
   margin-left: 100px;
   margin-right: 100px;
   padding-top: 10px;
-  
+}
+
+.task-hint {
+  background-color: #df84c5;
 }
 
 /* "Code" for buttons from https://www.w3schools.com/howto/howto_css_next_prev.asp */
