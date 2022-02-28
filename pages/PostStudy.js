@@ -26,8 +26,8 @@ export default function PostStudy()
             email = "";
         }
         else{
-            matriculation= document.getElementById('email').value;
-            email = document.getElementById('matric').value;
+            matriculation= document.getElementById('matric').value;
+            email = document.getElementById('email').value;
         }
 
         let data = {
