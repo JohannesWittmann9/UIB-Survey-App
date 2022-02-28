@@ -22,8 +22,8 @@ export default function Snippet ({ tasks , id, handleClick })
             <LikertScale 
                 question="Would this snippet help to answer your search task?"
                 numberButtons={7}
-                labelStart= 'Not credible'
-                labelEnd='Very credible'
+                labelStart= 'Not helpful'
+                labelEnd='Very helpful'
                 name={"question" + id} 
             />
             )}

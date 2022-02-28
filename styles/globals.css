@@ -32,7 +32,7 @@ h1 {
 
 .help-overlay0::after {
   position: absolute;
-  content: 'In this Task you have to rate the credibility of search results based on the snippets you see down below. Every snippet has a rating-scale under its content.';
+  content: 'In this task you have to rate search results based on the snippets you see down below. Every snippet has a rating-scale under its content. Rate how helpful this snippet is, in order to find the true answer to the given search question';
   background-color: #bebdbe;
   width: 300px;
   padding: 10px;
@@ -44,7 +44,7 @@ h1 {
 
 .help-overlay1::after {
   position: absolute;
-  content: 'You can see a simulated search page in this task. Click on every Link (That is where your mouse symbol changes to a pointer) and give your rating on the bottom of the resulting page. The rating should be related to the credibility of this web source.';
+  content: 'You can see a simulated search page in this task. Click on every Link (That is where your mouse symbol changes to a pointer) and give your rating on the bottom of the resulting page. The rating should be related to how helpful this web page is to answer your search question in a correct way.';
   background-color: #bebdbe;
   width: 300px;
   padding: 10px;
