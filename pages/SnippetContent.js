@@ -75,10 +75,10 @@ export default function SnippetContent ()
         <div className="help-content">On the bottom of this page you will find the rating-scale.</div>
         <img className='task-snippet-img' src={imageSrc} alt={id} />
         <LikertScale
-            question="Do you consider this content as credible?"
+            question="Would this page help to answer your search question?"
             numberButtons={7}
-            labelStart= 'Not credible'
-            labelEnd='Very credible'
+            labelStart= 'Not helpful'
+            labelEnd='Very helpful'
             name="question"
         />
     
