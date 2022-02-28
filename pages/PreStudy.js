@@ -241,7 +241,7 @@ export default function PreStudy(){
                 
                 
                 <LikertScale
-                    question="On average, how many results do you click on until you reached your goal of research?"
+                    question="On average, how many web pages do u visit until you reached your goal of research?"
                     numberButtons={5}
                     buttonLabels={[
                         "0",

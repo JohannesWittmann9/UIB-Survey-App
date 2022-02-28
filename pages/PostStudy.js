@@ -19,8 +19,16 @@ export default function PostStudy()
             gender = document.getElementById('gender').value,
             degree = document.getElementById('degree').value,
             occupation = document.getElementById('occupation').value,
-            matriculation = document.getElementById('matriculation').value,
-            email = document.getElementById('email').value;
+            matriculation, email;
+
+        if(!visible) {
+            matriculation = "";
+            email = "";
+        }
+        else{
+            matriculation= document.getElementById('email').value;
+            email = document.getElementById('matric').value;
+        }
 
         let data = {
             age: age,
@@ -80,7 +88,7 @@ export default function PostStudy()
                     <>
                         <div className="description demographic">
                             <div className="demographic-title"> Please enter your matriculation number ... </div>
-                            <input id="matriculation" type="text" placeholder='Matrikelnummer' />
+                            <input id="matric" type="text" placeholder='Matrikelnummer' />
                         </div>
                         <div className="description demographic">
                             <div className="demographic-title">Please enter your Student-Email ...</div>
