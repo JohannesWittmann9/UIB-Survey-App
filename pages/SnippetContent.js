@@ -24,7 +24,6 @@ export default function SnippetContent ()
     const [id, setId] = useState(Object.keys(router.query)[0]);
     const [taskFromDoc, setTaskFromDoc] = useState({});
 
-    console.log(id);
 
     // Initializing page 
     useEffect(() => 
@@ -49,15 +48,18 @@ export default function SnippetContent ()
     const handleSubmit = (e) =>
     {
         // A number between 1 and 7 -> the checked radio button
-        let checked = getChecked(e.target.parentElement.children[2], 2,8);
+        let checked = getChecked(e.target.parentElement.children[3], 2,8);
 
         // Sets checked under the question id and suitable task
+
+        user.clickedSnippets[id] = true;
 
         if(checked == -1)
         {
             user.clickedSnippets[id] = false;
-            setCookie("user", user);
         }
+
+        setCookie("user", user);
 
         let currentTask = user.currentTask;
         
@@ -70,6 +72,7 @@ export default function SnippetContent ()
     return (
     <Layout>
         <h1>{title}</h1>
+        <div className="help-content">On the bottom of this page you will find the rating-scale.</div>
         <img className='task-snippet-img' src={imageSrc} alt={id} />
         <LikertScale
             question="Do you consider this content as credible?"

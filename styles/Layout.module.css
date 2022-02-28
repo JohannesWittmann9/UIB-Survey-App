@@ -23,7 +23,7 @@
 /* From https://stackoverflow.com/questions/9350775/set-position-absolute-and-margin */
 .spacer {
   position: absolute;
-  bottom: -5vh;
+  bottom: -6vh;
   left: -5vw;
   right: -5vw;
   height: 10vh;

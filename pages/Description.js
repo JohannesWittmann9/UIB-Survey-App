@@ -53,6 +53,7 @@ export default function Description ()
                 Some of the search result pages will look a bit different than
                 others. On those, you are able to look at the page contents by clicking, as you
                 would do in a normal web search. Below the contents you will be able to place your ratings.
+                <strong> Every rating has to be placed in order to continue the study. </strong>
             </p>
             <p>
                 After all judgements have been made, you will be sent to a short

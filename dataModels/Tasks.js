@@ -1,8 +1,8 @@
 import { documentTask } from "../firebase/fireLib";
-
+// https://www.mayoclinic.org/drugs-supplements-zinc/art-20366112
 const data1 = {
     "title": "Will taking zinc supplements improve pregnancy?",
-    "description": "Zinc is an essential mineral. In fact, pregnant woman do require more minerals",
+    "description": "Zinc is an essential mineral, found throughout the whole human body, helping the immune system in many ways.",
     "questions": 
     [
          
@@ -80,10 +80,10 @@ const data1 = {
         
     ]
 };
-
+// https://www.mayoclinic.org/diseases-conditions/migraine-headache/symptoms-causes/syc-20360201#:~:text=A%20migraine%20is%20a%20headache,sensitivity%20to%20light%20and%20sound.
 const data2 = {
     "title": "Does Aleve relieve migraine headaches?",
-    "description": "Aleve/Naproxen is a type of nonsteroidal anti-inflammatory drug used for pain relief. \n \n Migraine is a strong headache",
+    "description": "Aleve/Naproxen is a type of nonsteroidal anti-inflammatory drug used for pain relief. Migraine is a strong headache causing severe throbbing pain or a pulsing feeling on one side of the head.",
     "questions": 
     [
          

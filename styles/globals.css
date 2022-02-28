@@ -22,6 +22,50 @@ h1 {
   text-align: center;
 }
 
+.help-button {
+  position: absolute;
+  right: 7vw;
+  width: 100px;
+  height: 50px;
+  background-color: #bebdbe;
+}
+
+.help-overlay0::after {
+  position: absolute;
+  content: 'In this Task you have to rate the credibility of search results based on the snippets you see down below. Every snippet has a rating-scale under its content.';
+  background-color: #bebdbe;
+  width: 300px;
+  padding: 10px;
+  bottom: 100;
+  left: 100px;
+  border-radius: 15px;
+  font-size: 20px;
+}
+
+.help-overlay1::after {
+  position: absolute;
+  content: 'You can see a simulated search page in this task. Click on every Link (That is where your mouse symbol changes to a pointer) and give your rating on the bottom of the resulting page. The rating should be related to the credibility of this web source.';
+  background-color: #bebdbe;
+  width: 300px;
+  padding: 10px;
+  bottom: 100;
+  left: 100px;
+  border-radius: 15px;
+  font-size: 20px;
+}
+
+.help-content {
+  background-color: #bebdbe;
+  height: 50px;
+  font-size: 20px;
+  border-radius: 15px;
+  margin-left: 7vw;
+  margin-right: 7vw;
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 10px;
+}
+
 .title-description {
   opacity: 65%;
   text-align: center;
@@ -117,14 +161,12 @@ h1 {
   border-radius: 15px;
   margin-top: 10px;
   margin-bottom: 50px;
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: calc(7vw + 100px);
+  margin-right: calc(7vw + 100px);
   padding-top: 10px;
 }
 
-.task-hint {
-  background-color: #df84c5;
-}
+
 
 /* "Code" for buttons from https://www.w3schools.com/howto/howto_css_next_prev.asp */
 

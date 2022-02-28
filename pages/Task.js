@@ -21,7 +21,6 @@ export default function Task()
     const [taskDescription, setTaskDescription] = useState("");
     const [tasks, setTasks] = useState([]);
     const [tasksLoaded, setTasksLoaded] = useState(false);
-    const [visible, setVisible] = useState(false);
 
     const router = useRouter();
 
@@ -43,7 +42,7 @@ export default function Task()
     const handleSubmit = (e) =>
     {
         // Deal with data
-        let elements = e.target.parentElement.children[3].children;
+        let elements = e.target.parentElement.children[4].children;
 
         if(user.currentCondition === 1){
             let array = user.clickedSnippets;
@@ -102,11 +101,7 @@ export default function Task()
         if(user.currentCondition === 0) return
 
 
-        //For every clicked snippet
-        // Add .task-snippet-after
-        // Safe snippets in cookie?
-        user.clickedSnippets[e.target.id] = true;
-        setCookie("user", user);
+        
 
         // Switches to the content page, and hands an id so we can adjust to the clicked snippet
         router.push({
@@ -132,10 +127,17 @@ export default function Task()
         }
     }
 
+    const handleHelp = (e) => {
+        let toggleVal = "help-overlay" + user.currentCondition,
+        button = e.target;
+        button.classList.toggle(toggleVal);
+    }
+
 
     return (
         <Layout>
             <h1>{taskTitle}</h1>
+            <button onClick={handleHelp} className="help-button">HELP</button>
             <div className='task-description description task-definition'>
                 <strong>Definitions: <br /></strong>
                 {taskDescription}
