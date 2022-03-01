@@ -46,8 +46,11 @@ export default function PostStudy()
 
         update(user.userID, {postStudy: data});
 
-        router.push('/End');
+        setTimeout(() => {
+            router.push('/End');
+        }, 2000);
     }
+        
 
     return(
         <Layout>
