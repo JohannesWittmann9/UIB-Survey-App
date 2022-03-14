@@ -49,12 +49,16 @@ export default function PostTask ()
 
         for(let i = 0; i < 2; i++)
         {
-            if(data[i] == -1){return}
+            if(data[i] == -1){
+                alert("Please answer every question!");
+                return}
         }
 
         if(user.currentTask == 3){
             data[2] = getChecked(elements[5], 3, 7, 2);
-            if(data[2] == -1){ return}
+            if(data[2] == -1){ 
+                alert("Please answer every question!");
+                return}
         }
 
         update(user.userID, {[user.currentCondition + "|" + currentTask + "|" + user.tasks[currentTask] + "|post" ]: data});

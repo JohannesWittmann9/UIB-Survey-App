@@ -27,12 +27,24 @@ export default function PreStudy(){
 
         // Didn't find a better way to fix it
         // Lets the user only pass if all ratings have been set
-        if(getChecked(elements[0] , 2 , 8) == -1){return}
-        else if(getChecked(elements[1] , 2 , 4) == -1){return}
-        else if(getChecked(elements[2] , 2 , 8) == -1){return}
-        else if(getChecked(elements[3] , 2 , 8) == -1){return}
-        else if(getChecked(elements[4] , 3 , 11, 2) == -1){return}
-        else if(getChecked(elements[5] , 2 , 8) == -1){return}
+        if(getChecked(elements[0] , 2 , 8) == -1){
+            alert("Please answer every question!");
+            return}
+        else if(getChecked(elements[1] , 2 , 4) == -1){
+            alert("Please answer every question!");
+            return}
+        else if(getChecked(elements[2] , 2 , 8) == -1){
+            alert("Please answer every question!");
+            return}
+        else if(getChecked(elements[3] , 2 , 8) == -1){
+            alert("Please answer every question!");
+            return}
+        else if(getChecked(elements[4] , 3 , 11, 2) == -1){
+            alert("Please answer every question!");
+            return}
+        else if(getChecked(elements[5] , 2 , 8) == -1){
+            alert("Please answer every question!");
+            return}
     
          
         let userObj = user;

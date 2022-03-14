@@ -52,7 +52,8 @@ export default function Task()
 
                 if(bool === false)
                 {
-                    return
+                    alert("Please rate every result!");
+                    return;
                 }
                 
             }
@@ -62,16 +63,36 @@ export default function Task()
         // Sets results of task into database if only snippet condition
         if(user.currentCondition === 0)
         {
-            if(getChecked(elements[1], 2, 8) == -1){return}
-            else if(getChecked(elements[3], 2, 8) == -1){return}
-            else if(getChecked(elements[5], 2, 8) == -1){return}
-            else if(getChecked(elements[7], 2, 8) == -1){return}
-            else if(getChecked(elements[9], 2, 8) == -1){return}
-            else if(getChecked(elements[11], 2, 8) == -1){return}
-            else if(getChecked(elements[13], 2, 8) == -1){return}
-            else if(getChecked(elements[15], 2, 8) == -1){return}
-            else if(getChecked(elements[17], 2, 8) == -1){return}
-            else if(getChecked(elements[19], 2, 8) == -1){return}
+            if(getChecked(elements[1], 2, 8) == -1){
+                alert("Please rate every result!");
+                return}
+            else if(getChecked(elements[3], 2, 8) == -1){
+                alert("Please rate every result!");
+                return}
+            else if(getChecked(elements[5], 2, 8) == -1){
+                alert("Please rate every result!");
+                return}
+            else if(getChecked(elements[7], 2, 8) == -1){
+                alert("Please rate every result!");
+                return}
+            else if(getChecked(elements[9], 2, 8) == -1){
+                alert("Please rate every result!");
+                return}
+            else if(getChecked(elements[11], 2, 8) == -1){
+                alert("Please rate every result!");
+                return}
+            else if(getChecked(elements[13], 2, 8) == -1){
+                alert("Please rate every result!");
+                return}
+            else if(getChecked(elements[15], 2, 8) == -1){
+                alert("Please rate every result!");
+                return}
+            else if(getChecked(elements[17], 2, 8) == -1){
+                alert("Please rate every result!");
+                return}
+            else if(getChecked(elements[19], 2, 8) == -1){
+                alert("Please rate every result!");
+                return}
 
             let data = {
                    [user.tasks[user.currentTask] + "0"]: getChecked(elements[1], 2, 8),

@@ -45,7 +45,9 @@ function PreTask () {
     // Makes sure all elements are checked
     for(let i = 0; i < 3; i++)
     {
-      if(data[i] == -1){return}
+      if(data[i] == -1){
+        alert("Please answer every question!");
+        return}
     }
 
     // Condition | Task position | Task ID | pre
