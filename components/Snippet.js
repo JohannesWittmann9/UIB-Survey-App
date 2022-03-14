@@ -20,7 +20,7 @@ export default function Snippet ({ tasks , id, handleClick })
             </div>
             { visible && (
             <LikertScale 
-                question="Would this snippet help to answer your search question?"
+                question="Would this search result help to answer your search question?"
                 numberButtons={7}
                 labelStart= 'Not helpful'
                 labelEnd='Very helpful'
