@@ -24,19 +24,19 @@ Each condition is done with 2 random Tasks.
 The images below do only show the main part of the survey.
 In fact, it consists of many more pages, like demographice, pre and post task ...
 
-![Condition 0](https://github.com/Understanding-Information-Behaviour/nextjs-survey-app/blob/main/gitpic/Condition0.png)
+![Condition 0](https://github.com/JohannesWittmann9/nextjs-survey-app/blob/main/gitpic/Condition0.png)
 
 As you can see, participants are able to rate results, based on snippets in Condition 0.
 
-![Condition 1](https://github.com/Understanding-Information-Behaviour/nextjs-survey-app/blob/main/gitpic/Condition1.png)
+![Condition 1](https://github.com/JohannesWittmann9/nextjs-survey-app/blob/main/gitpic/Condition1.png)
 
 And in Condition 1, they are able to click on those.
 
-![Condition 1 Content Top](https://github.com/Understanding-Information-Behaviour/nextjs-survey-app/blob/main/gitpic/Condition1ContentTop.png)
+![Condition 1 Content Top](https://github.com/JohannesWittmann9/nextjs-survey-app/blob/main/gitpic/Condition1ContentTop.png)
 
 And participants are able to place their ratings afterwards.
 
-![Condition 1 Content Top](https://github.com/Understanding-Information-Behaviour/nextjs-survey-app/blob/main/gitpic/Condition1ContentBottom.png)
+![Condition 1 Content Top](https://github.com/JohannesWittmann9/nextjs-survey-app/blob/main/gitpic/Condition1ContentBottom.png)
 
 
 
